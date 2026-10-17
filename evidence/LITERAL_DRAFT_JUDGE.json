@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-05T15:33:08.629Z",
+  "verdict": "PASS_WITH_SINGLE_RESPONSE_LIMIT",
+  "materialFindings": [],
+  "independentJudge": {
+    "focusedMockTestsPassed": 3,
+    "sourceOutsideInstructionsUnchanged": true,
+    "liveSavedRowsReconstructed": [
+      {
+        "index": 0,
+        "type": "HUMAN_REVIEW",
+        "exactSpan": true,
+        "valueGrounded": true
+      },
+      {
+        "index": 1,
+        "type": "TEXT",
+        "exactSpan": true,
+        "valueGrounded": true
+      },
+      {
+        "index": 2,
+        "type": "IMAGE",
+        "exactSpan": true,
+        "valueGrounded": true
+      },
+      {
+        "index": 3,
+        "type": "LINK",
+        "exactSpan": true,
+        "valueGrounded": true
+      },
+      {
+        "index": 4,
+        "type": "TEXT",
+        "exactSpan": true,
+        "valueGrounded": true
+      },
+      {
+        "index": 5,
+        "type": "OVERFLOW",
+        "exactSpan": true,
+        "valueGrounded": true
+      },
+      {
+        "index": 6,
+        "type": "HUMAN_REVIEW",
+        "exactSpan": true,
+        "valueGrounded": true
+      }
+    ],
+    "providerCalls": 0,
+    "financialCalls": 0,
+    "secretsRead": false
+  },
+  "workerEvidence": {
+    "compilerMockTestsPassed": 45,
+    "independentlyRerunWholeCompilerSuite": false,
+    "providerCalls": 0
+  },
+  "coordinatorEvidence": {
+    "diagnosticAttempts": 1,
+    "applicationCompileAttempts": 1,
+    "totalIncidentAttempts": 2,
+    "httpStatus": 201,
+    "elapsedMs": 3431,
+    "draftPersisted": true,
+    "scopeUnchanged": true,
+    "noAcceptanceOrPayment": true,
+    "retainedState": {
+      "acceptedVersion": 2,
+      "latestVersion": 3,
+      "paidAttempts": 1,
+      "retiredAttempts": 1,
+      "entitlements": 1,
+      "bytes": 718,
+      "acceptedHash": "bc3412b01043687d8f06f085ccc92d10604e496d2a379ab0d97eef28dba03e14",
+      "result": "PASS_OWNER_EXECUTED"
+    }
+  },
+  "diagnosedMechanism": "Filename present elsewhere in brief, absent from selected IMAGE sourceQuote. Earlier discarded outputs cannot be reconstructed; Unicode normalization was not established as the observed cause.",
+  "currentSourceSHA256": "ac7b3ed50503954c63c7ed22b24dc6cd189a8392ddddd28e3e99ebfa9fd3ece9",
+  "evidenceSHA256": {
+    "diagnostic": "d3bd47aeaa4fb9554baf393071ab3d3cea0e44cd9c0c9ceece05e932c1b41aef",
+    "live": "bc5d291df40b02fbd3d26fa4ea2e9efc941f258237222c2225fb0812f42d5cb9",
+    "retainedState": "b50c2ca2774f4bfbd5faff6f0c61598fb19f7108342b156f0797e6890b0b37ae"
+  },
+  "limits": [
+    "Judge reconstructed saved evidence and reviewed helper source; did not execute live API or private-state checks.",
+    "One accepted current response does not establish general model reliability.",
+    "Public packages remain earlier snapshots; no financial or agreement action was introduced."
+  ]
+}

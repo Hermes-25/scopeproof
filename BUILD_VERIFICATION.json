@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-17T02:16:15.331Z",
+  "environment": {
+    "os": "win32",
+    "node": "v24.18.0",
+    "npm": "11.16.0",
+    "sameHost": true,
+    "differentComputer": false,
+    "chromium": "Existing locally installed Playwright Chromium1234; executable path supplied, no new browser download",
+    "credentialFree": true,
+    "chromiumVersion": "151.0.7922.34"
+  },
+  "install": {
+    "command": "npm ci --cache <workspace-cache> --no-audit --no-fund",
+    "exitCode": 0,
+    "packagesAdded": 158,
+    "notes": "Executed on new archive extraction; no node_modules copied. npm warned esbuild postinstall scripts were not approved; build below verifies actual usable binaries."
+  },
+  "checks": [
+    {
+      "step": "build",
+      "command": "npm run build",
+      "exitCode": 0,
+      "elapsedMs": 8372
+    },
+    {
+      "step": "full-initial",
+      "command": "npm test",
+      "exitCode": 1,
+      "elapsedMs": 45793,
+      "tests": 129,
+      "pass": 128,
+      "fail": 1,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "failure": "First browser dot-prefixed asset case returned REVIEW_REQUIRED after13.4seconds; underlying cause not established."
+    },
+    {
+      "step": "focused-browser-rerun",
+      "command": "node --experimental-transform-types --test --test-name-pattern=dot-prefixed tests/delivery.test.ts",
+      "exitCode": 0,
+      "tests": 1,
+      "pass": 1,
+      "fail": 0,
+      "skipped": 0,
+      "elapsedMs": 2324.6773
+    },
+    {
+      "step": "full",
+      "command": "npm test",
+      "exitCode": 0,
+      "elapsedMs": 33139,
+      "tests": 129,
+      "pass": 129,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "step": "unit",
+      "command": "npm run test:unit",
+      "exitCode": 0,
+      "elapsedMs": 15737,
+      "tests": 112,
+      "pass": 112,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    }
+  ],
+  "newProviderCalls": 0,
+  "newFinancialCalls": 0,
+  "sourceCompilerSHA256": "ac7b3ed50503954c63c7ed22b24dc6cd189a8392ddddd28e3e99ebfa9fd3ece9",
+  "sourceTestsSHA256": "8cf20a7a67801819567f1f07dcabfcde6156b94c0f2f618c2891b0a9d5c3f0a1",
+  "limits": [
+    "Fresh folder/archive extraction on same Windows host, not a new physical computer or POSIX run.",
+    "Provider-response tests are controlled; no fresh model or PayPal API request.",
+    "Full and browser-unavailable suites overlap; do not sum their counts.",
+    "Final documentation/result metadata is added after checks, then runtime/test/fixture/lockfile bytes are compared with this tested extraction.",
+    "Initial full run had one browser-unavailable observation failure (128/129). Focused same-source rerun passed. No safety deadline/validator change; retry does not erase the initial observation."
+  ],
+  "status": "PASS_ON_RERUN_WITH_RECORDED_INITIAL_FAILURE",
+  "fullSuite": {
+    "tests": 129,
+    "passed": 129
+  },
+  "browserUnavailableSuite": {
+    "tests": 112,
+    "passed": 112
+  },
+  "currentCompilerControlledChecks": 45,
+  "startupSmoke": {
+    "command": "node --experimental-transform-types scripts/local-demo.ts",
+    "port": 3194,
+    "GETConfig": true,
+    "GETBuiltHTML": true,
+    "mode": "LOCAL_TEST",
+    "aiConfigured": false,
+    "financialRequests": 0,
+    "providerRequests": 0
+  }
+}

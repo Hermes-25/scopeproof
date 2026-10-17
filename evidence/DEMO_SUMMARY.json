@@ -1,0 +1,27 @@
+{
+  "durationSeconds": 148.48,
+  "videoFile": "scopeproof-clean-demo.webm",
+  "sha256": "c3817e98c20d720f99b7570bdeee162c40b38cfed925992d9c8615a8e854eeb7",
+  "captioned": false,
+  "addedText": false,
+  "audio": false,
+  "segments": [
+    "Existing saved live Gemini draft; no new generation",
+    "Separate automated manual-criteria LOCAL_TEST journey; no money movement",
+    "Previously completed sandbox receipt read-only; approval/capture not recorded"
+  ],
+  "checks": [
+    {
+      "check": "actual LOCAL_TEST UI scope confirmations, failed-v1 block, four BROWSER v2 checks, exact acceptance, local completion and v2 download pin after v3",
+      "pass": true,
+      "downloadHash": "f68d4430f6e69f5fec01d01919216de6b68049aa560c9b2a2fdcd16a141d9807"
+    },
+    {
+      "check": "historical paid sandbox receipt and actual accepted-v2 bytes match with v3 already present; GET only",
+      "pass": true,
+      "downloadHash": "bc3412b01043687d8f06f085ccc92d10604e496d2a379ab0d97eef28dba03e14"
+    }
+  ],
+  "publicURL": null,
+  "sourceArchiveIncludesVideo": false
+}

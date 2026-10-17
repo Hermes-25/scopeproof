@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-05T15:28:33.482Z",
+  "purpose": "REQUESTED_PROJECT_LITERAL_DRAFT_CHECK",
+  "providerCallsAttempted": 1,
+  "maximumProviderCalls": 1,
+  "financialPosts": 0,
+  "result": "PASS",
+  "sourceHash": "ac7b3ed50503954c63c7ed22b24dc6cd189a8392ddddd28e3e99ebfa9fd3ece9",
+  "limits": [
+    "Single current provider response; no general reliability claim.",
+    "Draft only: no scope save, confirmation, acceptance or payment request."
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "brief": "One landing page for Juniper Bakery. Include Tuesday–Sunday, 8am–4pm, our logo, and a booking button linking to https://example.com/book. Logo file: logo.png. No horizontal overflow at 390px. Review the visual design together before payment.",
+  "elapsedMs": 3431,
+  "httpStatus": 201,
+  "scopeUnchanged": true,
+  "noAcceptanceOrPayment": true,
+  "requirements": [
+    {
+      "sourceQuote": "One landing page for Juniper Bakery.",
+      "sourceStart": 0,
+      "sourceEnd": 36,
+      "label": "Landing page delivery",
+      "type": "HUMAN_REVIEW",
+      "value": null,
+      "ambiguities": [
+        "How should the parties review the landing page delivery?"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "sourceQuote": "Include Tuesday–Sunday, 8am–4pm,",
+      "sourceStart": 37,
+      "sourceEnd": 69,
+      "label": "Business hours text",
+      "type": "TEXT",
+      "value": "Tuesday–Sunday, 8am–4pm",
+      "ambiguities": [],
+      "humanReviewRequired": true
+    },
+    {
+      "sourceQuote": "Logo file: logo.png.",
+      "sourceStart": 138,
+      "sourceEnd": 158,
+      "label": "Logo image asset",
+      "type": "IMAGE",
+      "value": "logo.png",
+      "ambiguities": [],
+      "humanReviewRequired": true
+    },
+    {
+      "sourceQuote": "and a booking button linking to https://example.com/book.",
+      "sourceStart": 80,
+      "sourceEnd": 137,
+      "label": "Booking button destination link",
+      "type": "LINK",
+      "value": "https://example.com/book",
+      "ambiguities": [],
+      "humanReviewRequired": true
+    },
+    {
+      "sourceQuote": "and a booking button linking to https://example.com/book.",
+      "sourceStart": 80,
+      "sourceEnd": 137,
+      "label": "Booking button visible text",
+      "type": "TEXT",
+      "value": null,
+      "ambiguities": [
+        "What exact visible text should appear on the booking button?"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "sourceQuote": "No horizontal overflow at 390px.",
+      "sourceStart": 159,
+      "sourceEnd": 191,
+      "label": "No horizontal overflow at 390px viewport width",
+      "type": "OVERFLOW",
+      "value": "390",
+      "ambiguities": [],
+      "humanReviewRequired": true
+    },
+    {
+      "sourceQuote": "Review the visual design together before payment.",
+      "sourceStart": 192,
+      "sourceEnd": 241,
+      "label": "Visual design review",
+      "type": "HUMAN_REVIEW",
+      "value": null,
+      "ambiguities": [
+        "How should the parties review the visual design together before payment?"
+      ],
+      "humanReviewRequired": true
+    }
+  ],
+  "quotesGrounded": true,
+  "valuesGrounded": true,
+  "assetGrounded": true,
+  "draftPersisted": true
+}
