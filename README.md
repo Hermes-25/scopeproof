@@ -35,14 +35,9 @@ ScopeProof makes those decisions explicit: a checklist both people correct, deli
 3. **Accept one exact version.** The client explicitly accepts a bundle. Scope, artifact hash and the stored price are pinned together.
 4. **Complete checkout and receive that source.** With PayPal sandbox configured, the buyer approves and the server verifies the completed capture before unlocking delivery. A later v3 upload cannot replace accepted v2.
 
-```mermaid
-flowchart LR
-    A[Brief] --> B[Correct and confirm scope]
-    B --> C[Inspect delivery evidence]
-    C --> D[Accept exact version]
-    D --> E[Verify PayPal capture]
-    E --> F[Download accepted source]
-```
+<p align="center">
+<kbd>Brief</kbd> → <kbd>Agreed scope</kbd> → <kbd>Delivery evidence</kbd> → <kbd>Accept version</kbd> → <kbd>Verify capture</kbd> → <kbd>Accepted source</kbd>
+</p>
 
 ### Four observations, one human decision
 
